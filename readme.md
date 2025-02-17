@@ -1,43 +1,33 @@
 # Titanic Survival Prediction
-
 This project uses three machine learning models (Logistic Regression, Random Forest, and Neural Network) to predict the survival of Titanic passengers.
 
 ## Overview
-
 The project follows these steps:
 1. Loads and preprocesses the Titanic dataset
 2. Train 3 different machine learning models
 3. Evaluates model performance using accuracy, precision, recall, and F1-score
-4. Compare model performance visually
-5. Generate a summary of findings
+4. Compare model performance and then visualize it
+5. Document findings
 
 ## Requirements
-
 To run this project, install the dependencies from requirements.txt fiel.
-
 You can install the dependencies using:
 
 >> pip install -r requirements.txt
 
 
 ## Dataset
-
-The project uses the classic Titanic dataset, which should be named `titanic.csv` and placed in the project root directory. If you don't have the dataset, you can download it from [Kaggle](https://www.kaggle.com/c/titanic/data).
-
+The project uses the classic Titanic dataset, named `titanic.csv` and placed in the project root directory. You can download it from [GitHub](https://github.com/datasciencedojo/datasets/blob/master/titanic.csv#L1).
 
 
 ## How to Run
-
 1. Ensure all dependencies are installed
 2. Place the `titanic.csv` file in the project root directory
 3. Run the main script:
 
->> python main.py
+>> python index.py
 
 ## Code Structure
-
-The code is organized into several functions:
-
 - `load_data()`: Loads the dataset from a CSV file
 - `preprocess_data()`: Handles missing values, feature engineering, and preprocessing
 - `train_and_evaluate_models()`: Trains Logistic Regression, Random Forest, and Neural Network models
@@ -46,7 +36,6 @@ The code is organized into several functions:
 - `main()`: Orchestrates the entire process
 
 ## Model Details
-
 ### Logistic Regression
 - Uses Grid Search for hyperparameter tuning
 - Optimizes for C parameter and penalty type
@@ -61,7 +50,6 @@ The code is organized into several functions:
 - Binary cross-entropy loss function
 
 ## Performance Evaluation
-
 Models are evaluated based on:
 - Accuracy: Overall correctness
 - Precision: Positive predictive value
@@ -71,5 +59,4 @@ Models are evaluated based on:
 
 
 ## Results
-
-After running the code, the summary of results will be printed to the console, and visualization plots will be saved in the outputs directory. The best performing model for each metric will also be highlighted in the end. 
+After running the code, the summary of results is printed to the console, and visualization plots will be saved in the outputs directory. The best performing model for each metric will also be highlighted in the end. 
